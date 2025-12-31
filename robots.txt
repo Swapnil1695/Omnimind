@@ -1,0 +1,19 @@
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /admin/
+Disallow: /dashboard/
+Disallow: /billing/
+
+Sitemap: https://omnimind.ai/sitemap.xml
+
+# Crawl-delay for search engines
+Crawl-delay: 2
+
+# AI agents
+User-agent: ChatGPT-User
+Disallow: /
+User-agent: GPTBot
+Disallow: /
+User-agent: ClaudeBot
+Disallow: /s

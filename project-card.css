@@ -1,0 +1,94 @@
+.project-card {
+  transition: all 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-4px);
+}
+
+.project-card .progress-bar {
+  height: 8px;
+  border-radius: 4px;
+  overflow: hidden;
+  background-color: #e5e7eb;
+}
+
+.project-card .progress-fill {
+  height: 100%;
+  border-radius: 4px;
+  transition: width 0.3s ease;
+}
+
+.project-card .priority-high .progress-fill {
+  background-color: #ef4444;
+}
+
+.project-card .priority-medium .progress-fill {
+  background-color: #f59e0b;
+}
+
+.project-card .priority-low .progress-fill {
+  background-color: #10b981;
+}
+
+.project-card .risk-indicator {
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+.project-card .ai-insight {
+  border-left: 3px solid #3b82f6;
+  padding-left: 12px;
+}
+
+.project-card .team-avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 2px solid white;
+  margin-left: -8px;
+}
+
+.project-card .team-avatar:first-child {
+  margin-left: 0;
+}
+
+.project-card .status-badge {
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.project-card .deadline-warning {
+  animation: deadline-pulse 3s infinite;
+}
+
+@keyframes deadline-pulse {
+  0%, 100% {
+    color: inherit;
+  }
+  50% {
+    color: #ef4444;
+  }
+}
+
+@media (max-width: 768px) {
+  .project-card {
+    margin-bottom: 16px;
+  }
+  
+  .project-card .team-avatars {
+    display: none;
+  }
+}

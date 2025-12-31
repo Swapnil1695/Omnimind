@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - OmniMind AI</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <a href="dashboard.html" class="logo">
+                <div class="logo-icon">O</div>
+                <span>OmniMind AI</span>
+            </a>
+            
+            <div class="nav-links">
+                <div style="position: relative;">
+                    <a href="#" id="notificationBtn">
+                        <i class="fas fa-bell"></i>
+                        <span class="notification-badge">3</span>
+                    </a>
+                </div>
+                <div class="user-menu">
+                    <a href="#" style="display: flex; align-items: center; gap: 10px;">
+                        <img src="https://ui-avatars.com/api/?name=John+Doe&background=4a00e0&color=fff" 
+                             alt="User" style="width: 40px; height: 40px; border-radius: 50%;">
+                        <span>John Doe</span>
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Dashboard -->
+    <div class="dashboard">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <ul class="sidebar-menu">
+                <li><a href="dashboard.html" class="active">
+                    <i class="fas fa-home"></i> Dashboard
+                </a></li>
+                <li><a href="#">
+                    <i class="fas fa-project-diagram"></i> Projects
+                </a></li>
+                <li><a href="#">
+                    <i class="fas fa-calendar-alt"></i> Schedule
+                </a></li>
+                <li><a href="#">
+                    <i class="fas fa-tasks"></i> Tasks
+                </a></li>
+                <li><a href="#">
+                    <i class="fas fa-chart-line"></i> Analytics
+                </a></li>
+                <li><a href="#">
+                    <i class="fas fa-cog"></i> Settings
+                </a></li>
+                <li><a href="index.html" style="color: var(--danger-color);">
+                    <i class="fas fa-sign-out-alt"></i> Logout
+                </a></li>
+            </ul>
+
+            <!-- Ad Space -->
+            <div class="ad-container mt-3">
+                <small>Advertisement</small>
+                <p style="font-size: 0.9rem; margin: 0.5rem 0;">
+                    <strong>Grammarly Premium</strong><br>
+                    Enhance your writing with AI
+                </p>
+                <button class="btn btn-primary" style="padding: 0.3rem 0.8rem; font-size: 0.8rem;">
+                    Try Free
+                </button>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Welcome Section -->
+            <section class="welcome-section">
+                <h1>Welcome back, John! 👋</h1>
+                <p>Your AI assistant has been monitoring 5 projects and detected 3 important updates.</p>
+                <button class="btn btn-primary mt-2">
+                    <i class="fas fa-microphone"></i> Talk to OmniVoice
+                </button>
+            </section>
+
+            <!-- Stats Grid -->
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-number">5</div>
+                    <div class="stat-label">Active Projects</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">23</div>
+                    <div class="stat-label">Tasks Today</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">98%</div>
+                    <div class="stat-label">Productivity Score</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">3</div>
+                    <div class="stat-label">Urgent Alerts</div>
+                </div>
+            </div>
+
+            <!-- Projects Section -->
+            <section class="mb-3">
+                <h2 style="margin-bottom: 1.5rem; color: var(--primary-color);">
+                    <i class="fas fa-project-diagram"></i> Active Projects
+                </h2>
+                
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="project-header">
+                            <h3>Website Redesign</h3>
+                            <span class="project-status status-active">Active</span>
+                        </div>
+                        <p>Complete redesign of company website with AI integration</p>
+                        <div class="project-progress">
+                            <div style="background: #e0e0e0; height: 8px; border-radius: 4px; margin: 1rem 0;">
+                                <div style="background: var(--success-color); width: 75%; height: 100%; border-radius: 4px;"></div>
+                            </div>
+                            <div style="display: flex; justify-content: space-between;">
+                                <span>75% Complete</span>
+                                <span>Due: Tomorrow</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-header">
+                            <h3>Q4 Marketing Campaign</h3>
+                            <span class="project-status status-active">Active</span>
+                        </div>
+                        <p>End-of-year marketing strategy and implementation</p>
+                        <div class="project-progress">
+                            <div style="background: #e0e0e0; height: 8px; border-radius: 4px; margin: 1rem 0;">
+                                <div style="background: var(--warning-color); width: 45%; height: 100%; border-radius: 4px;"></div>
+                            </div>
+                            <div style="display: flex; justify-content: space-between;">
+                                <span>45% Complete</span>
+                                <span>Due: Dec 15</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Ad Card -->
+                    <div class="project-card" style="background: linear-gradient(135deg, #f8f9fa, #e9ecef);">
+                        <div class="project-header">
+                            <h3 style="color: var(--primary-color);">
+                                <i class="fas fa-ad"></i> Sponsored Tool
+                            </h3>
+                        </div>
+                        <p><strong>Notion AI</strong> - Upgrade your documentation with AI-powered writing and organization.</p>
+                        <p style="font-size: 0.9rem; color: var(--gray-color);">
+                            Special offer: 40% off for OmniMind users
+                        </p>
+                        <button class="btn btn-primary mt-2" style="width: 100%;">
+                            Try Now
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Notifications Section -->
+            <section class="mb-3">
+                <h2 style="margin-bottom: 1.5rem; color: var(--primary-color);">
+                    <i class="fas fa-bell"></i> Recent Notifications
+                </h2>
+                
+                <div class="notifications-list">
+                    <div class="notification-item notification-critical">
+                        <strong>Critical: Server Downtime</strong>
+                        <p>Production server experiencing issues. Immediate action required.</p>
+                        <small>5 minutes ago</small>
+                    </div>
+                    
+                    <div class="notification-item notification-important">
+                        <strong>Meeting Reminder</strong>
+                        <p>Team sync meeting in 30 minutes. Agenda prepared by AI.</p>
+                        <small>1 hour ago</small>
+                    </div>
+                    
+                    <div class="notification-item notification-info">
+                        <strong>Project Update</strong>
+                        <p>"Website Redesign" is ahead of schedule by 2 days.</p>
+                        <small>3 hours ago</small>
+                    </div>
+                </div>
+            </section>
+
+            <!-- AI Assistant Section -->
+            <section class="mb-3" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 2rem; border-radius: 15px;">
+                <h2 style="margin-bottom: 1rem;">
+                    <i class="fas fa-robot"></i> OmniVoice AI Assistant
+                </h2>
+                <p>Ready to help with tasks, scheduling, and decisions. Just ask!</p>
+                <div style="display: flex; gap: 1rem; margin-top: 1.5rem;">
+                    <button class="btn" style="background: white; color: var(--primary-color);">
+                        <i class="fas fa-microphone"></i> Voice Command
+                    </button>
+                    <button class="btn btn-secondary" style="border-color: white; color: white;">
+                        <i class="fas fa-keyboard"></i> Type Message
+                    </button>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script>
+        // Notification toggle
+        document.getElementById('notificationBtn').addEventListener('click', function(e) {
+            e.preventDefault();
+            alert('You have 3 unread notifications:\n1. Server Downtime (Critical)\n2. Meeting Reminder (Important)\n3. Project Update (Info)');
+        });
+
+        // Voice command simulation
+        document.querySelectorAll('button').forEach(btn => {
+            if (btn.textContent.includes('Voice Command')) {
+                btn.addEventListener('click', function() {
+                    alert('🎤 Voice command activated. Start speaking now...');
+                });
+            }
+        });
+    </script>
+</body>
+</html>

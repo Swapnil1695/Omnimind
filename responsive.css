@@ -1,0 +1,526 @@
+/* Extra small devices (phones, less than 640px) */
+@media (max-width: 639px) {
+  .xs-hidden {
+    display: none !important;
+  }
+  
+  .xs-block {
+    display: block !important;
+  }
+  
+  .xs-flex {
+    display: flex !important;
+  }
+  
+  .xs-grid {
+    display: grid !important;
+  }
+  
+  /* Typography */
+  .xs-text-xs {
+    font-size: 0.75rem !important;
+  }
+  
+  .xs-text-sm {
+    font-size: 0.875rem !important;
+  }
+  
+  .xs-text-base {
+    font-size: 1rem !important;
+  }
+  
+  .xs-text-lg {
+    font-size: 1.125rem !important;
+  }
+  
+  .xs-text-xl {
+    font-size: 1.25rem !important;
+  }
+  
+  /* Spacing */
+  .xs-p-2 {
+    padding: 0.5rem !important;
+  }
+  
+  .xs-p-4 {
+    padding: 1rem !important;
+  }
+  
+  .xs-px-2 {
+    padding-left: 0.5rem !important;
+    padding-right: 0.5rem !important;
+  }
+  
+  .xs-px-4 {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
+  
+  /* Layout */
+  .xs-flex-col {
+    flex-direction: column !important;
+  }
+  
+  .xs-items-center {
+    align-items: center !important;
+  }
+  
+  .xs-justify-center {
+    justify-content: center !important;
+  }
+  
+  /* Grid */
+  .xs-grid-cols-1 {
+    grid-template-columns: repeat(1, minmax(0, 1fr)) !important;
+  }
+  
+  .xs-grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  }
+  
+  /* Sidebar */
+  .sidebar-xs-collapsed {
+    width: 0 !important;
+    overflow: hidden !important;
+  }
+  
+  /* Modal */
+  .modal-xs-full {
+    width: 100vw !important;
+    height: 100vh !important;
+    margin: 0 !important;
+    border-radius: 0 !important;
+  }
+  
+  /* Table */
+  .table-xs-scroll {
+    display: block !important;
+    overflow-x: auto !important;
+    white-space: nowrap !important;
+  }
+}
+
+/* Small devices (landscape phones, 640px and up) */
+@media (min-width: 640px) {
+  .sm-hidden {
+    display: none !important;
+  }
+  
+  .sm-block {
+    display: block !important;
+  }
+  
+  .sm-flex {
+    display: flex !important;
+  }
+  
+  .sm-grid {
+    display: grid !important;
+  }
+  
+  /* Typography */
+  .sm-text-xs {
+    font-size: 0.75rem !important;
+  }
+  
+  .sm-text-sm {
+    font-size: 0.875rem !important;
+  }
+  
+  .sm-text-base {
+    font-size: 1rem !important;
+  }
+  
+  .sm-text-lg {
+    font-size: 1.125rem !important;
+  }
+  
+  .sm-text-xl {
+    font-size: 1.25rem !important;
+  }
+  
+  /* Grid */
+  .sm-grid-cols-1 {
+    grid-template-columns: repeat(1, minmax(0, 1fr)) !important;
+  }
+  
+  .sm-grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  }
+  
+  .sm-grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+  }
+  
+  /* Sidebar */
+  .sidebar-sm-expanded {
+    width: 16rem !important;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .md-hidden {
+    display: none !important;
+  }
+  
+  .md-block {
+    display: block !important;
+  }
+  
+  .md-flex {
+    display: flex !important;
+  }
+  
+  .md-grid {
+    display: grid !important;
+  }
+  
+  /* Typography */
+  .md-text-lg {
+    font-size: 1.125rem !important;
+  }
+  
+  .md-text-xl {
+    font-size: 1.25rem !important;
+  }
+  
+  .md-text-2xl {
+    font-size: 1.5rem !important;
+  }
+  
+  /* Grid */
+  .md-grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  }
+  
+  .md-grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+  }
+  
+  .md-grid-cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+  }
+  
+  /* Layout */
+  .md-flex-row {
+    flex-direction: row !important;
+  }
+  
+  /* Sidebar */
+  .sidebar-md-default {
+    width: 16rem !important;
+  }
+}
+
+/* Large devices (desktops, 1024px and up) */
+@media (min-width: 1024px) {
+  .lg-hidden {
+    display: none !important;
+  }
+  
+  .lg-block {
+    display: block !important;
+  }
+  
+  .lg-flex {
+    display: flex !important;
+  }
+  
+  .lg-grid {
+    display: grid !important;
+  }
+  
+  /* Typography */
+  .lg-text-xl {
+    font-size: 1.25rem !important;
+  }
+  
+  .lg-text-2xl {
+    font-size: 1.5rem !important;
+  }
+  
+  .lg-text-3xl {
+    font-size: 1.875rem !important;
+  }
+  
+  /* Grid */
+  .lg-grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+  }
+  
+  .lg-grid-cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+  }
+  
+  .lg-grid-cols-5 {
+    grid-template-columns: repeat(5, minmax(0, 1fr)) !important;
+  }
+  
+  /* Layout */
+  .lg-container {
+    max-width: 1024px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+}
+
+/* Extra large devices (large desktops, 1280px and up) */
+@media (min-width: 1280px) {
+  .xl-hidden {
+    display: none !important;
+  }
+  
+  .xl-block {
+    display: block !important;
+  }
+  
+  .xl-flex {
+    display: flex !important;
+  }
+  
+  .xl-grid {
+    display: grid !important;
+  }
+  
+  /* Typography */
+  .xl-text-2xl {
+    font-size: 1.5rem !important;
+  }
+  
+  .xl-text-3xl {
+    font-size: 1.875rem !important;
+  }
+  
+  .xl-text-4xl {
+    font-size: 2.25rem !important;
+  }
+  
+  /* Grid */
+  .xl-grid-cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+  }
+  
+  .xl-grid-cols-5 {
+    grid-template-columns: repeat(5, minmax(0, 1fr)) !important;
+  }
+  
+  .xl-grid-cols-6 {
+    grid-template-columns: repeat(6, minmax(0, 1fr)) !important;
+  }
+  
+  /* Layout */
+  .xl-container {
+    max-width: 1280px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+}
+
+/* 2XL devices (extra large desktops, 1536px and up) */
+@media (min-width: 1536px) {
+  .\32xl-hidden {
+    display: none !important;
+  }
+  
+  .\32xl-block {
+    display: block !important;
+  }
+  
+  .\32xl-flex {
+    display: flex !important;
+  }
+  
+  .\32xl-grid {
+    display: grid !important;
+  }
+  
+  /* Layout */
+  .\32xl-container {
+    max-width: 1536px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+}
+
+/* Print styles */
+@media print {
+  .print-hidden {
+    display: none !important;
+  }
+  
+  .print-block {
+    display: block !important;
+  }
+  
+  .print-flex {
+    display: flex !important;
+  }
+  
+  .print-grid {
+    display: grid !important;
+  }
+  
+  /* Reset background colors for printing */
+  body {
+    background-color: white !important;
+    color: black !important;
+  }
+  
+  /* Hide unnecessary elements */
+  .no-print {
+    display: none !important;
+  }
+  
+  /* Show print-only elements */
+  .print-only {
+    display: block !important;
+  }
+  
+  /* Adjust text sizes for printing */
+  .print-text-sm {
+    font-size: 10pt !important;
+  }
+  
+  .print-text-base {
+    font-size: 12pt !important;
+  }
+  
+  .print-text-lg {
+    font-size: 14pt !important;
+  }
+  
+  /* Remove shadows and borders for cleaner print */
+  .card {
+    box-shadow: none !important;
+    border: 1px solid #ccc !important;
+  }
+  
+  /* Page breaks */
+  .page-break-before {
+    page-break-before: always !important;
+  }
+  
+  .page-break-after {
+    page-break-after: always !important;
+  }
+  
+  .page-break-inside-avoid {
+    page-break-inside: avoid !important;
+  }
+}
+
+/* Dark mode specific responsive adjustments */
+@media (min-width: 768px) and (prefers-color-scheme: dark) {
+  .dark\:md-grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+  }
+  
+  .dark\:md-flex-row {
+    flex-direction: row !important;
+  }
+}
+
+/* High contrast mode adjustments */
+@media (prefers-contrast: high) {
+  .contrast-high\:border-2 {
+    border-width: 2px !important;
+  }
+  
+  .contrast-high\:text-bold {
+    font-weight: bold !important;
+  }
+}
+
+/* Reduced motion adjustments */
+@media (prefers-reduced-motion: reduce) {
+  .motion-reduce\:transition-none {
+    transition: none !important;
+  }
+  
+  .motion-reduce\:animate-none {
+    animation: none !important;
+  }
+  
+  .motion-reduce\:transform-none {
+    transform: none !important;
+  }
+}
+
+/* Touch device optimizations */
+@media (hover: none) and (pointer: coarse) {
+  .touch\:text-lg {
+    font-size: 1.125rem !important;
+  }
+  
+  .touch\:p-4 {
+    padding: 1rem !important;
+  }
+  
+  .touch\:min-h-12 {
+    min-height: 3rem !important;
+  }
+  
+  /* Increase tap targets */
+  .touch\:min-w-12 {
+    min-width: 3rem !important;
+  }
+  
+  .touch\:min-h-12 {
+    min-height: 3rem !important;
+  }
+  
+  /* Remove hover effects */
+  .touch\:hover\:bg-transparent:hover {
+    background-color: transparent !important;
+  }
+}
+
+/* Landscape orientation */
+@media (orientation: landscape) and (max-height: 500px) {
+  .landscape\:hidden {
+    display: none !important;
+  }
+  
+  .landscape\:h-auto {
+    height: auto !important;
+  }
+  
+  .landscape\:overflow-y-auto {
+    overflow-y: auto !important;
+  }
+}
+
+/* Portrait orientation */
+@media (orientation: portrait) {
+  .portrait\:flex-col {
+    flex-direction: column !important;
+  }
+  
+  .portrait\:h-screen {
+    height: 100vh !important;
+  }
+}
+
+/* Custom breakpoints for specific components */
+@media (max-width: 400px) {
+  .voice-assistant-panel {
+    width: 100vw !important;
+    right: -1rem !important;
+    border-radius: 1rem 1rem 0 0 !important;
+  }
+  
+  .calendar {
+    font-size: 0.875rem !important;
+  }
+}
+
+@media (min-width: 1920px) {
+  .wide-screen\:max-w-7xl {
+    max-width: 80rem !important;
+  }
+  
+  .wide-screen\:text-lg {
+    font-size: 1.125rem !important;
+  }
+}
